@@ -1,9 +1,14 @@
 
 
-function NecessaryCookie({color,margin}){
+function NecessaryCookie({color,margin,necessary}){
 return(
 
-     <button style={{backgroundColor:color,marginLeft:margin + "px" ? margin : 0}}>Necessary cookies only</button>
+     <button style={{backgroundColor:color,marginLeft:margin + "px" ? margin : 0}}
+     onClick={()=>{
+      necessary();
+    }}
+     
+     >Necessary cookies only</button>
 );
 }
 

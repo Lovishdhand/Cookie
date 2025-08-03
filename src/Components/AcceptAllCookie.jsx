@@ -1,8 +1,13 @@
 
 
-function AcceptAllCookie({color}) {
+function AcceptAllCookie({color,acceptAll}) {
   return (
-    <button style={{backgroundColor:color}}>Accept all cookies</button>
+    <button style={{backgroundColor:color}} onClick={()=>{
+      acceptAll();
+
+
+
+    }} >Accept all cookies</button>
   );
 }
 
